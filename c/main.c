@@ -3,6 +3,7 @@
 
 int main(){
 
+  version();
   if (confirm()){
     printf("OK\n");
   } else {
