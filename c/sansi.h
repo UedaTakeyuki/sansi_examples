@@ -3,6 +3,6 @@
 #include <stdbool.h>
 
 void version();
-bool confirm();
+bool confirm(char*, char*, char*);
 
 #endif

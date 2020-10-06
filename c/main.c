@@ -4,7 +4,7 @@
 int main(){
 
   version();
-  if (confirm()){
+  if (confirm(NULL, NULL, NULL)){
     printf("OK\n");
   } else {
     printf("NG\n");
