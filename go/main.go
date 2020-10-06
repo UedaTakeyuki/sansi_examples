@@ -1,8 +1,7 @@
 package main
 
 /*
-//#cgo LDFLAGS: -L. -lssl -lcrypto -lpthread -ldl -lm -lsansi_ZbPdGoGyrNkQ
-#cgo LDFLAGS: -L. -lssl -lcrypto -lpthread -ldl -lm -lsansi
+#cgo LDFLAGS: libsansi_BLpXZoWArNWy_mac_v1.1.o -L. -lssl -lcrypto -lpthread -ldl -lm
 #include <sansi.h>
 #include <stdbool.h>
 */
@@ -13,7 +12,7 @@ import (
 )
 
 func main() {
-	if C.confirm() {
+	if C.confirm(nil, nil, nil) {
 		log.Println("OK!")
 	} else {
 		log.Println("NG!")

@@ -2,6 +2,7 @@
 #define _SANSI_H_
 #include <stdbool.h>
 
-extern bool confirm();
+void version();
+bool confirm(char*, char*, char*);
 
 #endif
