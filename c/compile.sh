@@ -1,9 +1,7 @@
 #
 # get your sansi library file name, remove "lib" prefix and ".a" postfix for linker 
 #
-original_libsansi=`ls libsansi*.a`
-end_removed=${original_libsansi%.a}
-libsansi=${end_removed#*lib}
+libsansi=`ls libsansi*.o`
 # echo $libsansi
 
 #
@@ -13,4 +11,5 @@ libsansi=${end_removed#*lib}
 
 #
 # compile by gcc with your sansi library
-gcc -o sansi main.c -L . -lssl -lcrypto -lpthread -ldl -lm -l${libsansi}
+# for -no-pie refer https://stackoverflow.com/a/49353245/11073131
+gcc -o sansi $libsansi main.c -L . -lssl -lcrypto -lpthread -ldl -lm
