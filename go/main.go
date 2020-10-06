@@ -1,7 +1,7 @@
 package main
 
 /*
-#cgo LDFLAGS: libsansi_BLpXZoWArNWy_mac_v1.1.o -L. -lssl -lcrypto -lpthread -ldl -lm
+#cgo LDFLAGS: libsansi.o -L. -lssl -lcrypto -lpthread -ldl -lm
 #include <sansi.h>
 #include <stdbool.h>
 */
