@@ -12,9 +12,4 @@ libsansi=${end_removed#*lib}
 #
 # compile by clang with your sansi library
 #
-#clang -o sansi main.c -L . -L /usr/local/opt/openssl/lib -lssl -lcrypto -lpthread -ldl -lm -l${libsansi}
 clang -o sansi main.c libsansi*.o -L . -L /usr/local/opt/openssl/lib -lssl -lcrypto -lpthread -ldl -lm
-
-#
-# compile by gcc with your sansi library
-#gcc -o sansi main.c -L . -lssl -lcrypto -lpthread -ldl -lm -l${libsansi}

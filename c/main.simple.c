@@ -3,7 +3,6 @@
 
 int main(){
 
-  version(); /* sho version of sansi */
   if (ok_confirmed == confirm(NULL, NULL, NULL)){
     printf("OK\n");
   } else {
