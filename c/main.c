@@ -1,3 +1,10 @@
+/*
+* example how to use sansi
+* 
+* @author Dr. Takeyuki UEDA
+* @copyright Copyright© Atelier UEDA 2020 - All rights reserved.
+*/
+
 #include <stdio.h>
 #include "sansi.h"
 
