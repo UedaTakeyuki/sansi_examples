@@ -1,3 +1,9 @@
+/*
+* Header file for sansi
+* 
+* @author Dr. Takeyuki UEDA
+* @copyright Copyright© Atelier UEDA 2020 - All rights reserved.
+*/
 #ifndef _SANSI_H_
 #define _SANSI_H_
 
