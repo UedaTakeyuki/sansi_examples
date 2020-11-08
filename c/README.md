@@ -1,4 +1,4 @@
-# A C version sample of how to protect your application from copying
+# C version
 
 This is the **C version** sample project of how to  protect your application with **sansi** from copying.
 
