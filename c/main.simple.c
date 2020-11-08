@@ -1,3 +1,10 @@
+/*
+* 10 second countdown, copy guarded by sansi
+* 
+* @author Dr. Takeyuki UEDA
+* @copyright Copyright© Atelier UEDA 2020 - All rights reserved.
+*/
+
 #include "sansi.h"  // for sansi libraries
 
 #include <stdio.h>  // for printf
