@@ -12,7 +12,7 @@ sequenceDiagram;
 participant Your Application
 participant Sansi
 participant Koshinto
-participant Sansi
+participant Sansi in Copied App
 participant Copied your Application
 
 Your Application->>Sansi: confirm()
@@ -20,10 +20,10 @@ Sansi->>Koshinto: 環境情報
 Koshinto-->>Sansi: 一致
 Sansi-->>Your Application: true
 
-Copied your Application->>Sansi: confirm()
-Sansi->>Koshinto: 環境情報
-Koshinto-->>Sansi: 不一致
-Sansi-->>Copied your Application: false
+Copied your Application->>Sansi in Copied App: confirm()
+Sansi in Copied App->>Koshinto: 環境情報
+Koshinto-->>Sansi in Copied App: 不一致
+Sansi in Copied App-->>Copied your Application: false
 ```
 
 The sansi embedded in your application can be operated through the Koshinto Service. You can download the Sansi library from your account of Koshinto, and perform all operations such as setting and changing keys from your mobile device through Koshinto's web interface.
