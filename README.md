@@ -10,20 +10,20 @@ The **confirm()** function provided by sansi
 ```mermaid
 sequenceDiagram;
 participant Your Application
-participant Sansi in your Application
+participant Sansi
 participant Koshinto
-participant Sansi in unauthorized copy of Your Application
-participant unauthorized copy of Your Application
+participant Sansi
+participant Copied your Application
 
 Your Application->>Sansi in your Application: confirm()
 Sansi in your Application->>Koshinto: 環境情報
 Koshinto-->>Sansi in your Application: 一致
 Sansi in your Application-->>Your Application: true
 
-unauthorized copy of Your Application->>Sansi in unauthorized copy of Your Application: confirm()
-Sansi in unauthorized copy of Your Application->>Koshinto: 環境情報
-Koshinto-->>Sansi in unauthorized copy of Your Application: 不一致
-Sansi in unauthorized copy of Your Application-->>unauthorized copy of Your Application: false
+Copied your Application->>Sansi: confirm()
+Sansi->>Koshinto: 環境情報
+Koshinto-->>Sansi: 不一致
+Sansi-->>Copied your Application: false
 ```
 
 The sansi embedded in your application can be operated through the Koshinto Service. You can download the Sansi library from your account of Koshinto, and perform all operations such as setting and changing keys from your mobile device through Koshinto's web interface.
