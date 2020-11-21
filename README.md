@@ -47,12 +47,12 @@ Especially when using on **Raspberry Pi**, you can limit the launch of your appl
 Using on **Mac**, you can limit the launch of your application to get permitted only on a Mac PC that has a specific serial number.
 On all types of machines, you can also bind by **IP address** or **Mac address**, so you can use an **inexpensive WiFi dongle** as a substitute for a **USB Key dongle**.
 
-For now, only Raspberry Pi and Mac can bind applications to device serial numbers due to our lack of the device for technical works.
-We welcome your donation of other devices that we can use for technical work to make it be supported on the roadmap.
+For now, only Raspberry Pi and Mac can bind applications to device serial numbers due to my lack of the device for technical works.
+I welcome your donation of other devices that I can use for technical work to make it be supported on the roadmap.
 
 ### not for
-For now, sansi does not support Windows due to our lack of the development environment.
-We welcome your donation of a Windows PC that we can use for technical work to make Windows supported on the roadmap.
+For now, sansi does not support Windows due to my lack of the development environment.
+I welcome your donation of a Windows PC that I can use for technical work to make Windows supported on the roadmap.
 
 In principle,　applications used without a network are not available with sansi.
 
@@ -76,3 +76,5 @@ The samples in the following languages are available.
 - [Go](go)
 - [Python](python)
 - [Bash](bash)
+
+I welcome your pull request to add aditional language sample!
