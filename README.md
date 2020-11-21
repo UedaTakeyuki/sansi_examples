@@ -15,10 +15,10 @@ participant Koshinto
 participant Sansi
 participant Copied your Application
 
-Your Application->>Sansi in your Application: confirm()
-Sansi in your Application->>Koshinto: 環境情報
-Koshinto-->>Sansi in your Application: 一致
-Sansi in your Application-->>Your Application: true
+Your Application->>Sansi: confirm()
+Sansi->>Koshinto: 環境情報
+Koshinto-->>Sansi: 一致
+Sansi-->>Your Application: true
 
 Copied your Application->>Sansi: confirm()
 Sansi->>Koshinto: 環境情報
