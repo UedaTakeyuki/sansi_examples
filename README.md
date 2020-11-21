@@ -77,4 +77,4 @@ The samples in the following languages are available.
 - [Python](python)
 - [Bash](bash)
 
-I welcome your pull request to add aditional language sample!
+I welcome your pull request to add an additional language sample!
