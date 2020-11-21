@@ -22,25 +22,6 @@ Therefore, you can protect your application from piracy simply by **checking the
 
 <img src="ss.2020-11-21_22.03.56.png">
 
-```mermaid
-sequenceDiagram;
-participant Your Application
-participant Sansi
-participant Koshinto
-participant Sansi in Copied App
-participant Copied your Application
-
-Your Application->>Sansi: confirm()
-Sansi->>Koshinto: Environmental infos, Bind_id
-Koshinto-->>Sansi: match !
-Sansi-->>Your Application: true
-
-Copied your Application->>Sansi in Copied App: confirm()
-Sansi in Copied App->>Koshinto: Environmental infos, Bind_id
-Koshinto-->>Sansi in Copied App: not match !
-Sansi in Copied App-->>Copied your Application: false
-```
-
 ## What applications are suitable for, and not for.
 ### for
 **Linux (x86, arm)** and **Mac (x86)** applications that are always connected to the network.
