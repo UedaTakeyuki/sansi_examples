@@ -39,6 +39,23 @@ Koshinto-->>Sansi in Copied App: not match !
 Sansi in Copied App-->>Copied your Application: false
 ```
 
+## What applications are suitable for, and not for.
+### for
+**Linux (x86, arm)** and **Mac (x86)** applications that are always connected to the network.
+Especially when using on **Raspberry Pi**, you can limit the launch of your application to get permitted only on a specific RPi board or from a specific SD card. 
+
+Using on **Mac**, you can limit the launch of your application to get permitted only on a Mac PC that has a specific serial number.
+On all types of machines, you can also bind by **IP address** or **Mac address**, so you can use an **inexpensive WiFi dongle** as a substitute for a **USB Key dongle**.
+
+For now, only Raspberry Pi and Mac can bind applications to device serial numbers due to our lack of the device for technical works.
+We welcome your donation of other devices that we can use for technical work to make it be supported on the roadmap.
+
+### not for
+For now, sansi does not support Windows due to our lack of the development environment.
+We welcome your donation of a Windows PC that we can use for technical work to make Windows supported on the roadmap.
+
+In principle,　applications used without a network are not available with sansi.
+
 ## How to get started.
 
 Refer Koshinto document of [get-started](https://koshinto.uedasoft.com/docs/guide/getting-started/signup.html).
