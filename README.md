@@ -41,8 +41,12 @@ Sansi in Copied App-->>Copied your Application: false
 
 ## How to get started.
 
-The sansi embedded in your application can be operated through the Koshinto Service. You can download the Sansi library from your account of Koshinto, and perform all operations such as setting and changing keys from your mobile device through Koshinto's web interface.
-
-For detail of **Sansi** and **Koshinto**, refer https://koshinto.uedasoft.com/docs/.
+Refer Koshinto document of [get-started](https://koshinto.uedasoft.com/docs/guide/getting-started/signup.html).
 
 ## How to embed sansi into your application
+The dependency of the sansi is only libssl and libcrypto of the **OpenSSL**, so you can embed sansi library in your application by just link
+with the openssl and there dependencies like as follows:
+
+```
+ -lssl -lcrypto -lpthread -ldl -lm
+ ```
