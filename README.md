@@ -50,3 +50,5 @@ The dependency of the sansi is only with **libssl** and **libcrypto** of the **O
 ```
  -lssl -lcrypto -lpthread -ldl -lm
  ```
+
+I think OpenSSL is pre-installed in most Linux, but it may not be installed on the Mac. In any case, if it is not installed, you need to install it properly.
