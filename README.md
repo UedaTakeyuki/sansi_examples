@@ -9,8 +9,6 @@ The **confirm()** function provided by sansi
 
 ```mermaid
 sequenceDiagram;
-autonumber
-
 participant Your Application
 participant Sansi
 participant Koshinto
