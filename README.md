@@ -9,7 +9,7 @@ The **confirm()** function provided by sansi
 
 ```mermaid
 sequenceDiagram;
-autonumber
+autonumber;
 
 participant Your Application
 participant Sansi
