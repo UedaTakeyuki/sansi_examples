@@ -16,13 +16,13 @@ participant Sansi in Copied App
 participant Copied your Application
 
 Your Application->>Sansi: confirm()
-Sansi->>Koshinto: 環境情報
-Koshinto-->>Sansi: 一致
+Sansi->>Koshinto: Bind_id, Environmental infos
+Koshinto-->>Sansi: match !
 Sansi-->>Your Application: true
 
 Copied your Application->>Sansi in Copied App: confirm()
-Sansi in Copied App->>Koshinto: 環境情報
-Koshinto-->>Sansi in Copied App: 不一致
+Sansi in Copied App->>Koshinto: Bind_id, Environmental infos
+Koshinto-->>Sansi in Copied App: not match !
 Sansi in Copied App-->>Copied your Application: false
 ```
 
