@@ -22,6 +22,7 @@ Therefore, you can protect your application from piracy simply by **checking the
 
 <img src="ss.2020-11-21_22.03.56.png">
 
+<!--
 ```mermaid
 sequenceDiagram;
 participant Your Application
@@ -40,6 +41,7 @@ Sansi in Copied App->>Koshinto: Environmental infos, Bind_id
 Koshinto-->>Sansi in Copied App: not match !
 Sansi in Copied App-->>Copied your Application: false
 ```
+-->
 
 ## What applications are suitable for, and not for.
 ### for
