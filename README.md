@@ -44,8 +44,7 @@ Sansi in Copied App-->>Copied your Application: false
 Refer Koshinto document of [get-started](https://koshinto.uedasoft.com/docs/guide/getting-started/signup.html).
 
 ## How to embed sansi into your application
-The dependency of the sansi is only libssl and libcrypto of the **OpenSSL**, so you can embed sansi library in your application by just link
-with the openssl and there dependencies like as follows:
+The dependency of the sansi is only with **libssl** and **libcrypto** of the **OpenSSL**. So you can embed sansi library in your application by just link with the openssl and their dependencies like as follows:
 
 ```
  -lssl -lcrypto -lpthread -ldl -lm
