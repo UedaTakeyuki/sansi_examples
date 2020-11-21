@@ -69,3 +69,10 @@ The dependency of the sansi is only with **libssl** and **libcrypto** of the **O
  ```
 
 I think OpenSSL is pre-installed in most Linux, but it may not be installed on the Mac. In any case, if it is not installed, you need to install it properly.
+
+### Sample project
+The samples in the following languages are available.
+- [C](c)
+- [Go](go)
+- [Python](python)
+- [Bash](bash)
