@@ -6,11 +6,11 @@ The sansi is a license manager library for Linux (x86 and ARM) and Mac (x86), by
 
 ## Why the sansi is an out-of-the-box copy protection.
 
-Because the sansi **does not use license definition files nor license key** that can be cumbersome to acquire and manage properly and can cause weaknesses and accidents.
-Instead, the information that determines whether an application can be run is securely stored in koshinto in combination with the Bind_id that uniquely identifies the application.
-Each sansi library has a unique Bind_id embedded internally as binary since at the time you have downloaded it from the koshinto.
+Because the sansi **does not use license definition files nor license key** which can be troublesome that in case not handled carefully, it can be a security weak point or cause an accident.
+Instead, sansi handle the license by the manner of **client-server**. The license information, which is called **Bind**, is securely **stored in the koshinto server**.
+Each sansi library, which works as a **client**, has a unique Bind_id embedded internally as binary since at the time you have downloaded it.
 
-## How sansi protect your application against unauthorized copying by working with the koshinto.
+## How sansi protect your application against unauthorized copying by the manner of **client-server**.
 sansi provides the function **confirm()** for your application.
 The confirm() collects various environmental information (e.g.  IP address, Mac address, device unique ID, SD card unique ID, etc.) that can be used to uniquely identify the environment in which the application is executed, and sends it to koshinto together with Bind_id.
 
