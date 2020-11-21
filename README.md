@@ -4,12 +4,13 @@ A sample project of how to protect your application against unauthorized copying
 
 The sansi is a license manager library for Linux (x86 and ARM) and Mac (x86), by working with [Koshinto](https://koshinto.uedasoft.com/docs/) service, it provides an **out-of-the-box copy protection** feature to your application.
 
-## How the sansi protect your application by working with the koshinto
+## Why the sansi is an out-of-the-box copy protection.
 
-The sansi does not use license definition files that can be cumbersome to manage properly and can cause weaknesses and accidents.
+Because the sansi **does not use license definition files nor license key** that can be cumbersome to acquire and manage properly and can cause weaknesses and accidents.
 Instead, the information that determines whether an application can be run is securely stored in koshinto in combination with the Bind_id that uniquely identifies the application.
 Each sansi library has a unique Bind_id embedded internally as binary since at the time you have downloaded it from the koshinto.
 
+## How sansi protect your application against unauthorized copying by working with the koshinto.
 sansi provides the function **confirm()** for your application.
 The confirm() collects various environmental information (e.g.  IP address, Mac address, device unique ID, SD card unique ID, etc.) that can be used to uniquely identify the environment in which the application is executed, and sends it to koshinto together with Bind_id.
 
@@ -38,10 +39,10 @@ Koshinto-->>Sansi in Copied App: not match !
 Sansi in Copied App-->>Copied your Application: false
 ```
 
-# How to get started
+## How to get started.
 
 The sansi embedded in your application can be operated through the Koshinto Service. You can download the Sansi library from your account of Koshinto, and perform all operations such as setting and changing keys from your mobile device through Koshinto's web interface.
 
 For detail of **Sansi** and **Koshinto**, refer https://koshinto.uedasoft.com/docs/.
 
-## Embed sansi into your application
+## How to embed sansi into your application
