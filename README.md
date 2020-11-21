@@ -20,7 +20,7 @@ The confirm () returns it to the application as a return value.
 
 Therefore, you can protect your application from piracy simply by **checking the return value of confirm () at your application start point and exiting if it is not OK**. That's it!
 
-![]("./ss.2020-11-21_22.03.56.png)
+![]("./ss.2020-11-21_22.03.56.png")
 
 ```mermaid
 sequenceDiagram;
