@@ -4,6 +4,9 @@ A sample project of how to protect your application against unauthorized copying
 
 The sansi is a license manager library for Linux (x86 and ARM) and Mac (x86), by working with [Koshinto](https://koshinto.uedasoft.com/docs/) service, it provides an **out-of-the-box copy protection** feature to your application.
 
+TThe sansi does not use license definition files that can be cumbersome to manage properly and can cause weaknesses and accidents. 
+Instead, the information that determines whether the application can be executed is safely stored in koshinto.
+
 ## How sansi protect your application against unauthorized copying by working with [Koshinto](https://koshinto.uedasoft.com/docs/)
 The **confirm()** function provided by sansi 
 
