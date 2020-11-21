@@ -15,7 +15,7 @@ Koshinto compares the sent environment information with the stored execution con
 The confirm () returns it to the application as a return value.
 
 
-Therefore, you can protect your application from piracy simply by **checking the return value of confirm () when starting your application and exiting if it is not OK**. That's it!
+Therefore, you can protect your application from piracy simply by **checking the return value of confirm () at your application start point and exiting if it is not OK**. That's it!
 
 ```mermaid
 sequenceDiagram;
