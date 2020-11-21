@@ -8,8 +8,9 @@ The sansi is a license manager library for Linux (x86 and ARM) and Mac (x86), by
 The **confirm()** function provided by sansi 
 
 ```mermaid
-sequenceDiagram;
+sequenceDiagram
 autonumber
+
 participant Your Application
 participant Sansi
 participant Koshinto
