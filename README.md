@@ -1,6 +1,6 @@
 # sansi_examples
 
-A sample project of how to protect your application against unauthorized copying, with the **sansi** library.
+Sample projects of how to protect your application against unauthorized copying, with the **sansi** library.
 
 The sansi is a license manager library for Linux (x86 and ARM) and Mac (x86), by working with [Koshinto](https://koshinto.uedasoft.com/docs/) service, it provides an **out-of-the-box copy protection** feature to your application.
 
@@ -21,25 +21,6 @@ The confirm () returns it to the application as a return value.
 Therefore, you can protect your application from piracy simply by **checking the return value of confirm () at your application start point and exiting if it is not OK**. That's it!
 
 <img src="ss.2020-11-21_22.03.56.png">
-
-```mermaid
-sequenceDiagram;
-participant Your Application
-participant Sansi
-participant Koshinto
-participant Sansi in Copied App
-participant Copied your Application
-
-Your Application->>Sansi: confirm()
-Sansi->>Koshinto: Environmental infos, Bind_id
-Koshinto-->>Sansi: match !
-Sansi-->>Your Application: true
-
-Copied your Application->>Sansi in Copied App: confirm()
-Sansi in Copied App->>Koshinto: Environmental infos, Bind_id
-Koshinto-->>Sansi in Copied App: not match !
-Sansi in Copied App-->>Copied your Application: false
-```
 
 ## What applications are suitable for, and not for.
 ### for
