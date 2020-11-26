@@ -71,6 +71,8 @@ int main(int argc,char *argv[]){
     printf("cipher_text:");
     PrintBytes(cipher_text, cipher_text_len);
     printf("cipher_text_len: %d\n",cipher_text_len);
+    printf("encripted_bind_id:");
+    PrintBytes(encripted_bind_id, encripted_bind_id_len);
     printf("plaintext_len: %d\n",plaintext_len);
     printf("bind_id: %s\n",plaintext);
 }
