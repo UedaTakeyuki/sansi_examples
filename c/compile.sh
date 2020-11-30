@@ -59,5 +59,10 @@ echo "compiling…"
 #
 $compiler -o $obj $libsansi $sfile -L . -lssl -lcrypto -lpthread -ldl -lm
 
+#
+# strip
+#
+strip $obj
+
 # @author Dr. Takeyuki UEDA
 # @copyright Copyright© Atelier UEDA 2020 - All rights reserved.
