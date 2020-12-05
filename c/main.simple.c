@@ -15,10 +15,12 @@ int main(){
 
   if (ok_confirmed == confirm(NULL, NULL, NULL)){
     printf("OK\n");
-    tenseccount();
   } else {
     printf("NG\n");
+    return -1;
   }
+
+  tenseccount();
   return 0;
 }
 
