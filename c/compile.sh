@@ -1,15 +1,17 @@
 #!/bin/bash
 # 
 # compile sample for Linux by clang
-
+#
 usage_exit() {
-  echo "Usage: $0 [-h][-c][-g][-m][-o obj] [source] [libsansi]" 1>&2
+  echo "Usage: $0 [-h][-c][-d][-g][-i][-m][-o obj] [source] [libsansi]" 1>&2
   echo "  [source]:   compiling source file, default is 'main.sample.c' "      1>&2
   echo "  [libsansi]: path for linking 'libsansi….o', default is found it in cwd automatically " 1>&2
   echo "  [-h]: show this usage and exit" 1>&2
 
   echo "  [-c]: compile for linux by clang" 1>&2
+  echo "  [-d]: compile for linux by clang++ with standard c++11" 1>&2
   echo "  [-g]: compile for linux by gcc, this is default" 1>&2
+  echo "  [-i]: compile for linux by g++ with standard c++11" 1>&2
   echo "  [-m]: compile for mac by clang" 1>&2
 
   echo "  [-o obj] set compiled object file name, default is a.out" 1>&2
@@ -18,14 +20,21 @@ usage_exit() {
 
 compiler="gcc"
 obj="a.out"
+std=""
 
-while getopts "hcgmo:" OPT; do
+while getopts "hcdgimo:" OPT; do
 case "$OPT" in
   h) usage_exit
      ;;
   c) compiler="clang"
      ;;
+  d) compiler="clang++"
+     std="-std=c++11"
+     ;;
   g) compiler="gcc"
+     ;;
+  i) compiler="g++"
+     std="-std=c++11"
      ;;
   m) compiler="clang"
      # use openssl
@@ -52,12 +61,13 @@ echo "source   =" $sfile
 echo "libsansi =" $libsansi
 echo "compiler =" $compiler
 echo "obj      =" $obj
+echo "std      =" $std
 echo "compiling…"
 
 #
 # compile by clang with your sansi library
 #
-$compiler -o $obj $libsansi $sfile -L . -lssl -lcrypto -lpthread -ldl -lm
+$compiler $std -o $obj $libsansi $sfile -L . -lssl -lcrypto -lpthread -ldl -lm
 
 #
 # strip
